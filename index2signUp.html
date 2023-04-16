@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>singUpForm</title>
+    <link rel="stylesheet" href="./style2.css">
+    <link href='https://fonts.googleapis.com/css?family=Albert Sans' rel='stylesheet'>
+    <!-- <link href='https://fonts.googleapis.com/css?family=Anek Gujarati' rel='stylesheet'> -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+</head>
+
+<body>
+
+    <div class="container">
+        <header>sign up</header>
+
+        <form action="https://course.acciojob.com/">
+
+            <div class="field email-field">
+
+                <div class="input-field ">
+                    <input type="email"autofocus id="emailInp" placeholder="example.@gmail.com">
+                </div>
+                <span class="error">
+                    <i class='bx bx-info-circle'></i>
+                    <span>Please enter valid email</span>
+                </span>
+            </div>
+
+            <div class="field">
+
+                <div class="input-field createPass-field">
+                    <input type="password"  id="cPass" placeholder="create password">
+                    <i class='bx bx-hide eyeIcon'></i>
+                </div>
+                <span class="error">
+                    <i class='bx bx-info-circle'></i>
+                    <span class>Please enter valid password</span>
+                </span>
+            </div>
+
+            <!-- bx-show -->
+
+            <div class="field">
+
+                <div class="input-field confmpass-field">
+                    <input type="password" id="cnfrmPass" placeholder="confirm password">
+                    <i class='bx bx-hide eyeIcon'></i>
+                </div>
+                <span class="error">
+                    <i class='bx bx-info-circle'></i>
+                    <span >password not match</span>
+                </span>
+            </div>
+
+
+            <div class="input-field btn">
+                <input type="submit" id="submit" value="sumbit">
+            </div>
+
+        </form>
+    </div>
+
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
+
