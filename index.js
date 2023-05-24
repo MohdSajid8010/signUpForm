@@ -86,6 +86,9 @@ formEl.addEventListener("submit", (e) => {
        document.getElementById("submit").style.background="#48e848";
        document.getElementById("submit").value="sumbit now";
 
+    }else{
+        document.getElementById("submit").style.background="dodgerblue";
+        document.getElementById("submit").value="sumbit";
     }
     });
 
@@ -115,16 +118,15 @@ eyeIconEls.forEach((eyeIconEl) => {
         }else{
             eyeIconEl.classList.replace("bx-show" , "bx-hide");
         }
-        // console.log(eyeIconEl.previousSibling.previousSibling)
+        // console.log(eyeIconEl.previousElementSibling)
 
-        if (eyeIconEl.previousSibling.previousSibling.type === "password") {
-            eyeIconEl.previousSibling.previousSibling.type = "text";
+        if (eyeIconEl.previousElementSibling.type === "password") {
+            eyeIconEl.previousElementSibling.type = "text";
         } else {
-            eyeIconEl.previousSibling.previousSibling.type = "password";
+            eyeIconEl.previousElementSibling.type = "password";
         }
 
-        eyeIconEl.previousSibling.previousSibling.focus();
+        eyeIconEl.previousElementSibling.focus();
     })
 })
 
-// http://p.ip.fi/VIXB
